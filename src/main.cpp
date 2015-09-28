@@ -41,7 +41,7 @@ CBigNum bnProofOfWorkLimit(~uint256(0) >> 20);
 CBigNum bnProofOfStakeLimit(~uint256(0) >> 20);
 CBigNum bnProofOfWorkLimitTestNet(~uint256(0) >> 16);
 
-unsigned int nTargetSpacing = 1 * 90; // 90 seconds
+unsigned int nTargetSpacing = 1 * 60; // 60 seconds
 unsigned int nStakeMinAge = 8 * 60 * 60; // 8 hours
 unsigned int nStakeMaxAge = 60 * 60 * 24 * 2; // 1 day
 unsigned int nModifierInterval = 10 * 60; // 10 Minutes time to elapse before new modifier is computed
@@ -968,7 +968,7 @@ uint256 WantedByOrphan(const CBlock* pblockOrphan)
 int64_t GetProofOfWorkReward(int64_t nFees)
 
     {
-    int64_t nSubsidy = 40 * COIN;
+    int64_t nSubsidy = 50 * COIN;
 
     if (pindexBest->nHeight < 1) //ICO
         nSubsidy = 10000000 * COIN; 
@@ -981,10 +981,10 @@ int64_t GetProofOfWorkReward(int64_t nFees)
         nSubsidy = 2 * COIN;
     }
     else if(pindexBest->nHeight < 20000) { 
-        nSubsidy = 20 * COIN;
+        nSubsidy = 30 * COIN;
     }
     else if(pindexBest->nHeight < 30000) { // 40 after block 30000
-        nSubsidy = 30 * COIN;
+        nSubsidy = 40 * COIN;
     }
            	
     if (fDebug && GetBoolArg("-printcreation"))

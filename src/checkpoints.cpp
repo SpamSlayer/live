@@ -28,7 +28,7 @@ namespace Checkpoints
 	      (    1,	uint256("0x000001bb3588264f6ff5d905ffaa2acec5c4a1d60346fc67a3ce1227c913c1ae") ) 
         (   20,	uint256("0x0000020a6f94add461a9f02f1922cef7d7e5cb6a6044c50c6ddd5a78337b5fe4") )
         (   90,	uint256("0x00000043322b4c6158e11ac9e9d7c13b2c28a2eac5e27a3446bcf1a2576bf145") )
-     
+        (   11867,	uint256("0x58fb2a10d6fe9095f158b886f739ee70a13d646375d928824958d41c9a669106") ) //FORK
         
     ;
 
